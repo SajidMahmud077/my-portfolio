@@ -3,6 +3,7 @@ import linkedin from "../../assets/linkedin.png";
 import fb from "../../assets/fb.png";
 import github from "../../assets/github.jpg";
 import { motion } from "framer-motion";
+import { IoMdDownload } from "react-icons/io";
 
 const Banner = () => {
   return (
@@ -67,12 +68,13 @@ const Banner = () => {
                     ease: "linear",
                   }}
                 >
-                  <a href="/resume" target="_blank" rel="noopener noreferrer">
+                  <a className='' href="https://drive.google.com/file/d/1zEQTfsp2UV1KxDTBdR4yYcy41dOpjxMJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <button
                       type="button"
-                      className="relative px-6 py-3 text-white font-semibold transition-all duration-500 ease-in-out bg-gray-900 rounded-lg w-full border-2 border-transparent hover:border-gray-300"
+                      className="flex gap-2 relative px-12 py-2 text-white font-semibold transition-all duration-500 ease-in-out bg-gray-900 rounded-lg w-full border-2 border-transparent hover:border-gray-300"
                     >
-                      Resume
+                      
+                      <IoMdDownload className='text-xl' />Download CV
                     </button>
                   </a>
                 </motion.div>
