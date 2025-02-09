@@ -3,6 +3,7 @@ import Banner from './components/Banner/Banner'
 import About from './components/About/About'
 import Skills from './components/technologies/Skills'
 import Education from './components/Education/Education'
+import Projects from './components/Projects/Projects'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <About/>
       <Skills/>
       <Education/>
+      <Projects/>
       
     </div>
   )

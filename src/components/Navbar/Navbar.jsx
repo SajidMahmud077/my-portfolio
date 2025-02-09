@@ -9,7 +9,6 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-20 top-0 left-0 bg-gradient-to-r from-black via-gray-900 to-gray-800">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      
         <a
           href="banner"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -18,29 +17,33 @@ const Navbar = () => {
         </a>
 
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <motion.div
-                  className="relative inline-block rounded-lg p-[2px]"
-                  animate={{
-                    background: [
-                      "linear-gradient(90deg, #22c55e, #3b82f6)",
-                      "linear-gradient(90deg, #3b82f6, #22c55e)",
-                    ],
-                  }}
-                  transition={{
-                    repeat: Infinity,
-                    duration: 2,
-                    ease: "linear",
-                  }}
-                >
-                  <a href="/resume" target="_blank" rel="noopener noreferrer">
-                    <button
-                      type="button"
-                      className="relative px-4 py-2 text-white font-semibold transition-all duration-500 ease-in-out bg-gray-900 rounded-lg w-full border-2 border-transparent hover:border-gray-300"
-                    >
-                      Resume
-                    </button>
-                  </a>
-                </motion.div>
+          <motion.div
+            className="relative inline-block rounded-lg p-[2px]"
+            animate={{
+              background: [
+                "linear-gradient(90deg, #22c55e, #3b82f6)",
+                "linear-gradient(90deg, #3b82f6, #22c55e)",
+              ],
+            }}
+            transition={{
+              repeat: Infinity,
+              duration: 2,
+              ease: "linear",
+            }}
+          >
+            <a
+              href="https://drive.google.com/file/d/1zEQTfsp2UV1KxDTBdR4yYcy41dOpjxMJ/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                type="button"
+                className="cursor-pointer relative px-4 py-2 text-white font-semibold transition-all duration-500 ease-in-out bg-gray-900 rounded-lg w-full border-2 border-transparent hover:border-gray-300"
+              >
+                Resume
+              </button>
+            </a>
+          </motion.div>
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}
@@ -67,7 +70,6 @@ const Navbar = () => {
           </button>
         </div>
 
-      
         <div
           className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
             isOpen ? "block" : "hidden"
@@ -98,7 +100,7 @@ const Navbar = () => {
             </li>
 
             <li>
-            <Link
+              <Link
                 to="skills"
                 smooth={true}
                 duration={800}
@@ -108,7 +110,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-            <Link
+              <Link
                 to="education"
                 smooth={true}
                 duration={800}
@@ -118,12 +120,14 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="projects"
+                smooth={true}
+                duration={800}
                 className="block py-2 px-3 text-blue-700 hover:underline md:p-0 cursor-pointer"
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
               <a

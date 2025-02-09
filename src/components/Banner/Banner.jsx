@@ -71,10 +71,10 @@ const Banner = () => {
                   <a className='' href="https://drive.google.com/file/d/1zEQTfsp2UV1KxDTBdR4yYcy41dOpjxMJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <button
                       type="button"
-                      className="flex gap-2 relative px-12 py-2 text-white font-semibold transition-all duration-500 ease-in-out bg-gray-900 rounded-lg w-full border-2 border-transparent hover:border-gray-300"
+                      className="flex gap-2 cursor-pointer relative px-12 py-2 text-white font-semibold transition-all duration-500 ease-in-out bg-gray-900 rounded-lg w-full border-2 border-transparent hover:border-gray-300"
                     >
                       
-                      <IoMdDownload className='text-xl' />Download CV
+                      <IoMdDownload className='text-xl' />Download Resume
                     </button>
                   </a>
                 </motion.div>
