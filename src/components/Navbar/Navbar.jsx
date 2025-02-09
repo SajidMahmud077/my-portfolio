@@ -130,12 +130,14 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a
-                href="#"
+            <Link
+                to="contact"
+                smooth={true}
+                duration={800}
                 className="block py-2 px-3 text-blue-700 hover:underline md:p-0 cursor-pointer"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
